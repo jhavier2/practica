@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+	<script type="text/javascript" src="../bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+	<div class="row">
+	<h1> Formulario de registro de clientes</h1>
+		
+	<form action="../controladores/enrutador_cliente.php" method="post" class="form-group">
+	
+			<label for="nit" >Nit:</label>
+
+			<input type="text" name="nit"
+			 class="form-control" id="nit" placeholder="ingresar c.i. o nit">
+			 <label for="cliente">cliente:</label>
+
+			<input type="text" name="cliente"
+			 class="form-control" id="cliente" placeholder="ingresar razon social o nombre">
+
+			<label for="dir">direccion:</label>
+			<input type="text" name="dir"
+			 class="form-control" id="dir" placeholder="ingresar razon social o nombre">
+			 <label for="email">email:</label>
+			<input type="email" name="email"
+			 class="form-control" id="email" placeholder="ingresar razon social o nombre">
+
+			<label for="tel">telefono:</label>
+			<input type="tel" name="tel"
+			 class="form-control" id="tel" placeholder="ingresar razon social o nombre">
+
+			<label for="susc">Suscripcion:</label>
+			<input type="date" name="susc"
+			 class="form-control" id="susc" placeholder="ingresar razon social o nombre">
+	
+			<label for="aniv">aniversario:</label>
+			<input type="date" name="aniv" class="form-control" id="aniv" placeholder="ingresar razon social o nombre">
+			<input type="submit" name ="btn" value="Registrar" class="btn btn-primary" >
+			<input type="reset" name="limpiar" value="Limpiar" class="btn btn-default">
+			<a href="vst_cliente.php" class="btn btn-danger">Cerrar </a>
+	</form>
+
+	</div>
+		
+	</div>
+
+</body>
+</html>
